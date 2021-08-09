@@ -4,50 +4,52 @@
   --bg-color: #333;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} 
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Social Links */
 
 header {
+  position: relative;
   background: var(--bg-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 70px;
 }
 
-header img {
-  width: 100px;
-  height: 100px;
+.menu-icon {
+  position: absolute;
+  margin: 5px;
+}
+
+.mjp-logo {
+  position: absolute;
+  margin: 30px;
 }
 
 header a {
   text-decoration: none;
   color: var(--primary-color);
 }
-
-header nav {
-  margin: 7px 0;
-}
 /* Header END */
 
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.socials ul {
+  margin-left: 100px;
   list-style: none;
+  line-height: 1.1;
 }
 
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
+.socials ul li a {
+  font-size: 0.7vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
