@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script src="https://kit.fontawesome.com/37de987a3a.js" crossorigin="anonymous"></script>
   <title>MJP Games</title>
-  <link rel="stylesheet" href="./assets/style/style.css" />
 </head>
-
 <body>
-    <header>
-        <img class="menu-icon" src="./assets/img/menu.svg" alt="" width=17/>
-        <img class="mjp-logo" src="./assets/img/mjpgames_logo.png" alt="MJP Games logo" width=50/>
-        <div class="socials">
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/mjpgames" target="_blank">YouTube</a>
-                </li>
-                <li>
-                    <a href="https://www.twitch.tv/mjp_games" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.twitch.tv/mjp_games" target="_blank">Twitch</a>
-                </li>
-            </ul>
-        <div>
-    </header>
-</body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class="fab fa-js-square"></i>
+        <div class="logo_name">MJP Games</div>
+      </div>
+      <i class="fas fa-bars" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <a href="#">
+          <i class="fas fa-grip-horizontal"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/mjpgames" target="_blank">
+          <i class="fas fa-bookmark"></i>
+          <span class="links_name">Favorite Mods</span>
+        </a>
+        <span class="tooltip">Favorite Mods</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/mjpgames" target="_blank">
+          <i class="fab fa-youtube"></i>
+          <span class="links_name">YouTube</span>
+        </a>
+        <span class="tooltip">YouTube</span>
+      </li>
+      <li>
+        <a href="https://twitter.com/Mjpgames" target="_blank">
+          <i class="fab fa-twitter"></i>
+          <span class="links_name">Twitter</span>
+        </a>
+        <span class="tooltip">Twitter</span>
+      </li>
+      <li>
+        <a href="https://discord.gg/nVsqqrF" target="_blank">
+          <i class="fab fa-discord"></i>
+          <span class="links_name">Discord</span>
+        </a>
+        <span class="tooltip">Discord</span>
+      </li>
+    </ul>
+  </div>
+  <div class="home_content">
+    <div class="text">Home Content</div>
+  </div>
 
+  <script src="./assets/js/script.js"></script>
+
+</body>
 </html>
