@@ -1,58 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style/style.css">
-  <script src="https://kit.fontawesome.com/446280273f.js" crossorigin="anonymous"></script>
-  <title>MJP Games</title>
-</head>
-<body>
-  <div class="sidebar">
-    <div class="logo_content">
-      <div class="logo">
-        <i class="fab fa-js-square"></i>
-        <div class="logo_name">MJP Games</div>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <!-- Boxiocns CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/446280273f.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <!-- <i class='bx bxl-c-plus-plus'></i> -->
+        <i class="fas fa-gamepad"></i>
+        <span class="logo_name">MJP Games</span>
       </div>
-      <i class="fas fa-bars" id="btn"></i>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <!-- <i class='bx bx-grid-alt' ></i> -->
+            <i class="fas fa-home"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <!-- <i class='bx bx-collection' ></i> -->
+              <i class="fas fa-bookmark"></i>
+              <span class="link_name">Favorite Mods</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Favorite Mods</a></li>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP & MySQL</a></li>
+          </ul>
+        </li>
+
+        <!-- Socials -->
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <!-- <i class='bx bx-book-alt' ></i> -->
+              <i class="fas fa-share-alt"></i>
+              <span class="link_name">Socials</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Socials</a></li>
+            <li>
+              <a href="https://www.youtube.com/mjpgames" target="_blank">YouTube</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Mjpgames" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://discord.gg/nVsqqrF" target="_blank">Discord</a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/mjp_games" target="_blank">Twitch</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Settings -->
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <!-- <i class='bx bx-cog' ></i> -->
+              <i class="fas fa-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Settings</a></li>
+              <label class="toggle">
+                <i class='bx bxs-moon'></i>
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-    <ul class="nav_list">
-      <li>
-        <a href="#">
-          <i class="fas fa-grip-horizontal"></i>
-          <span class="links_name">Dashboard</span>
-        </a>
-        <span class="tooltip">Dashboard</span>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/mjpgames" target="_blank">
-          <i class="fas fa-bookmark"></i>
-          <span class="links_name">Favorite Mods</span>
-        </a>
-        <span class="tooltip">Favorite Mods</span>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/mjpgames" target="_blank">
-          <i class="fab fa-youtube"></i>
-          <span class="links_name">Socials</span>
-        </a>
-        <span class="tooltip">Socials</span>
-      </li>
-      <li>
-        <a href="https://twitter.com/Mjpgames" target="_blank">
-          <i class="fab fa-twitter"></i>
-          <span class="links_name">Settings</span>
-        </a>
-        <span class="tooltip">Settings</span>
-      </li>
-    </ul>
-  </div>
-  <div class="home_content">
-    <div class="text">Home Content</div>
-  </div>
-
-  <script src="./assets/js/script.js"></script>
-
-</body>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <!-- <i class="fas fa-bars"></i> -->
+        <span class="text">Drop Down Sidebar</span>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
